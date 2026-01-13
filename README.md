@@ -1,11 +1,10 @@
-# How to paste copied rows to the empty UWP DataGrid (SfDataGrid)?
+# How to Paste Copied Rows to the Empty UWP DataGrid?
 
-How to paste copied rows to the empty UWP DataGrid (SfDataGrid)?
+This sample illustrates how to paste copied rows to the empty [UWP DataGrid](https://www.syncfusion.com/uwp-ui-controls/datagrid) (SfDataGrid).
 
-# About the sample
+By default, `DataGrid` does not allows you to paste the records from notepad or word when grid is empty. You can achieve this by overriding OnAttached method in SfDataGridBehaviour class.
 
-By default, SfDataGrid does not allows you to paste the records from notepad or word when grid is empty. You can achieve this by overriding OnAttached method in SfDataGridBehaviour class.
-
+#### C#
 ```c#
 public class SfDataGridBehavior : Behavior<SfDataGrid>
 {
@@ -35,5 +34,8 @@ public class SfDataGridBehavior : Behavior<SfDataGrid>
     }
 }
 ```
+
+![Pasting the copied rows to the empty DataGrid](PasteRowsToEmptyDataGrid.gif)
+
 ## Requirements to run the demo
  Visual Studio 2015 and above versions
